@@ -256,7 +256,7 @@
         <!--End Page 3-->
 
         <!--Page 4-->
-        <div data-role="page" id="page2" class="my_pages" style="background: #303030;">
+        <div data-role="page" id="page4" class="my_pages" style="background: #303030;">
             
             <!--Header and Navbar-->
             <div id="header" data-theme="a" data-role="header" class="main_page" data-position="fixed" data-id="footer" >
@@ -350,6 +350,114 @@
             </div>
         </div>
         <!--End Page 4-->
+
+        <!--ADD Item Page-->
+        <div data-role="page" id="add_item_pg" class="my_pages" style="background: #303030;">
+            
+            <!--Header and Navbar-->
+            <div id="header" data-theme="a" data-role="header" class="main_page" data-position="fixed" data-id="footer">
+                <h3 class="head_vmartlk" class="main_page">
+                   <img id="vmart_logo" src="logo.gif" alt="image" >
+                   <a href="#login_pg">
+                    <img id="logout_img" src="icons/shut_down.png" alt="image" style="max-height: 32px;max-width: 32px;" >
+                   </a>
+                  
+                    <a href="#page1" data-transition="slide">
+                      <img id="home_btn" src="icons/home.png" alt="image" style="max-height: 32px;max-width: 32px;" >
+                    </a>
+                   </a>
+                </h3>
+                
+            </div>
+            <!--End Header and navbar-->
+
+            <div data-role="content" class="content-back home-grid">
+                
+                <div class="add_item_content">
+
+                    <div class="camera_grid">
+                      
+                      <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                          <img src="images/def-image.png" class="capture_img">
+                        </div>
+                        
+                        <div class="ui-block-b">
+                          <a data-role="button" data-shadow="false" data-inline="false" data-theme="none" href="" class="camera_btns">
+                            <img src="icons/camera.png" border="0">
+                          </a>
+                          <a data-role="button" data-shadow="false" data-inline="false" data-theme="none" href="" class="camera_btns">
+                            <img src="icons/plus.png" border="0">
+                          </a>
+                          <a data-role="button" data-shadow="false" data-inline="false" data-theme="none" href="" class="camera_btns">
+                            <img src="icons/remove.png" border="0">
+                          </a>
+                        </div>
+
+                      </div>
+                    </div>
+
+
+                    <div data-role=controlgroup>
+                      <input type="text" id="title" name="title" placeholder="Title" data-mini="true" />
+
+                      <textarea id="description" name="description" placeholder="Description" rows="8" data-mini="true"></textarea>
+
+                      <div id="price_curr">
+                        <table style="width:100%;">
+                          <tr>
+                            <td>
+                              <input type="number" id="price" name="price" placeholder="Price" data-mini="true"/>  
+                            </td>
+                            
+                            <td>
+                              <select id="" name="currency" placeholder="currency" data-mini="true">
+                                <option>LKR</option>
+                                <option>USD</option>
+                                <option>AUD</option>
+                              </select>
+                            </td>
+                            <td>
+                              <input type="number" id="qty" name="qty" placeholder="Qty" data-mini="true" />
+                            </td>
+                          </tr>
+                        </table>
+                      </div>  
+
+                      <select id="" name="vmart_cat" placeholder="Category" data-mini="true">
+                                <option>Jewellary</option>
+                                <option>Handicrafts</option>
+                                <option>Gifts</option>
+                                <option>Cards</option>
+                      </select>
+
+                      <div data-role="controlgroup">
+
+                        <label for="status_1" data-mini="true" >ACTIVE</label>
+                        <input type="radio" id="status_1" name="status" data-mini="true" />
+
+                        <label for="status_2" data-mini="true" >SUSPEND</label>
+                        <input type="radio" id="status_2" name="status" data-mini="true" />
+
+                        <label for="status_3" data-mini="true" >REMOVED</label>
+                        <input type="radio" id="status_3" name="status" data-mini="true" />
+                      
+                      </div>
+                      <button type="submit" id="add_item_submit" data-icon="plus" data-iconpos="right" data-mini="true" >Add Item</button>
+                    </div>
+                  </div>
+              
+            </div>
+
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    
+                </h3>
+            </div>
+        </div>
+        
+
+        <!--END ADD Item Page-->
 
 
         <script type="text/javascript" src="phonegap.js"></script>
