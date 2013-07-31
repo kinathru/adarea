@@ -12,7 +12,10 @@
 {
 	height: 0;
 	padding: 20px 20px 90px 20px;
+	background-color: #303030;
 }
+
+.ui-page { background: gray;}
 
 .content-back
 {

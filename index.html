@@ -16,21 +16,9 @@
         <title>Hello World</title>
     </head>
     <body>
-        <div id="reposHome" data-role="page">
-            <div data-role="header" data-position="fixed">
-                <h1>GitHub Search</h1>
-                <a href="#page2" style="margin:10px 10px;" data-transition="slide" >Page2</a>
-            </div>
-            <div data-role="content">
-
-                <ul id="allRepos" data-role="listview"  data-filter="true">
-                </ul>
-            </div>
-        </div>
-
         
         <!-- Home -->
-        <div data-role="page" id="page2" class="my_pages">
+        <div data-role="page" id="page1" class="my_pages" style="background: #303030;">
             
             <!--Header and Navbar-->
             <div id="header" data-theme="a" data-role="header" class="main_page" data-position="fixed" data-id="footer" >
@@ -102,8 +90,72 @@
                 </h3>
             </div>
         </div>
+        <!--End Home-->
+
+        <div data-role="page" id="page2" class="my_pages" style="background: #303030;">
+            
+            <!--Header and Navbar-->
+            <div id="header" data-theme="a" data-role="header" class="main_page" data-position="fixed" data-id="footer" >
+                <h3 class="head_vmartlk" class="main_page">
+                   <img id="vmart_logo" src="logo.gif" alt="image" >
+                   <a href="#login_pg">
+                    <img id="logout_img" src="icons/shut_down.png" alt="image" style="max-height: 32px;max-width: 32px;" >
+                   </a>
+                </h3>
+                
+                <div data-role="navbar" class="header-nav">
+                    <ul>
+                        <li>
+                            <a href="#page1" data-transition="slide"  data-theme="" >
+                              <img src="icons/home.png" style="max-height: 32px;max-width: 32px;">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page2" data-transition="slide" data-theme="" >
+                                <img src="icons/profiles.png" style="max-height: 32px;max-width: 32px;">
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#page3" data-transition="slide" data-theme="" >
+                                <img src="icons/mail.png" style="max-height: 32px;max-width: 32px;">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#page4" data-transition="slide" data-theme="" >
+                                <img src="icons/money.png" style="max-height: 32px;max-width: 32px;">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--End Header and navbar-->
+
+            <div data-role="content" class="content-back home-grid">
+             
+                <h2>My Profile</h2>
+                <h3>Total Sales</h3>
+                <h4>2500</h4>
+                <h3>Toal Revenue</h3>
+                <h4>51000/-</h4>
+                <h3>Ranking</h3>
+                <p><img src="images/star.png" style="width:16px;"><img src="images/star.png" style="width:16px;"><img src="images/star.png" style="width:16px;">
+                <img src="images/star.png" style="width:16px;"><img src="images/star.png" style="width:16px;"></p>
+                <h3>Subscribers</h3>
+                <h4>115</h4>
+              
+            </div>
+
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    
+                </h3>
+            </div>
+        </div>
 
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/codiqa.ext.js"></script>
     </body>
 </html>
