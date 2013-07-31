@@ -17,6 +17,42 @@
         <title>Hello World</title>
     </head>
     <body>
+
+        <!--Login Page-->
+
+        <div data-role="page" id="login_pg" class="my_pages">
+            
+            <!--Header and Navbar-->
+            <div id="header" data-theme="a" data-role="header" class="main_page" data-position="fixed" data-id="footer" >
+                <h3 class="head_vmartlk" class="main_page">
+                   <img id="vmart_logo" src="logo.gif" alt="image" >
+                </h3>
+                
+            </div>
+            <!--End Header and navbar-->
+
+            <div data-role="content" class="content-back home-grid">
+
+              <div data-role="controlgroup" class="login_panel">
+                  <input type="text" id="lgn_user" name="lgn_user" placeholder="Username" data-mini="true" />
+                  <input type="password" id="lgn_pass" name="lgn_pass" placeholder="Password" data-mini="true" />
+                  <input id="login_btn" type="button" value="Sign In" />
+                  <label id="login_error" style="color:red;display:none;font-size:12px;" >Please Enter Valid Details</label>
+                  <a href="#page1">Main</a>
+                  
+              </div>
+
+            </div>
+
+            </div>
+
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    
+                </h3>
+            </div>
+        </div>
+        <!--End Login Page-->
         
         <!-- Home -->
         <div data-role="page" id="page1" class="my_pages" style="background: #303030;">
