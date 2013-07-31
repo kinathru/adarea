@@ -71,44 +71,49 @@
 .home-grid .ui-grid-a
 {
 	line-height: 0;
-    border-right:5px solid #04aeda;
-    border-bottom:5px solid #04aeda;
+    border-right:5px solid #383838;
+    border-bottom:5px solid #383838;
     font-size: 28px;
+    
 }
 
 .home-grid .ui-grid-a .ui-block-a
 {
    text-align: center;
    height: 30%;
-   background-color: #383838; 
+   background-color: #04aeda; 
    padding: 16% 1%;
    box-sizing: border-box;
    display:inline-block;           
-   border-left:5px solid #04aeda;
-   border-top:5px solid #04aeda;
+   border-left:5px solid #383838;
+   border-top:5px solid #383838;
+   
 }
 
 .home-grid .ui-grid-a .ui-block-b
 {
 	text-align: center;
    	height: 30%;
-   	background-color: #383838;
+   	background-color: #04aeda;
    	padding: 16% 1%;
    	box-sizing: border-box;
     display:inline-block;           
-    border-left:5px solid #04aeda;
-    border-top:5px solid #04aeda;
+    border-left:5px solid #383838;
+    border-top:5px solid #383838;
+    
 }
 
 .home-grid .ui-grid-a .ui-block-a .home-links
 {
 
+	color: white !important;
 	text-shadow: 0 0px 0 #fff;
 	text-decoration: none;
 }
 
 .home-grid .ui-grid-a .ui-block-b .home-links
 {
+	color: white !important;
 	text-shadow: 0 0px 0 #fff;
 	text-decoration: none;
 }
