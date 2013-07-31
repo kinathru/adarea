@@ -15,7 +15,9 @@
 	background-color: #303030;
 }
 
-.ui-page { background: gray;}
+.ui-page{
+	background-color: #303030 !important;
+}
 
 .content-back
 {
@@ -208,13 +210,16 @@
 .camera_grid .ui-grid-a
 {
 	width: 100%;
-	padding:10px 10px;
+	/*padding:10px 10px;*/
+	border: none !important;
 }
 
 .camera_grid .ui-grid-a .ui-block-a
 {
 	width: 80%;
 	float: left;
+	border: none !important;
+	background-color: #303030;
 }
 
 .camera_grid .ui-grid-a .ui-block-b
@@ -222,8 +227,10 @@
 	width: 20%;
 	float: right;
 	min-height: 145px;
-	padding-top: 18.5px;
-	padding-bottom: 18.5px;
+	padding-top: 14%;
+	padding-bottom: 1%;
+	border: none !important;
+	background-color: #303030;
 }
 
 .camera_grid .ui-grid-a .ui-block-b .camera_btns
