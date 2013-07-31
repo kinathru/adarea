@@ -62,7 +62,7 @@
              
                 <div class="ui-grid-a">
                     <div class="ui-block-a">
-                      <a class="home-links" data-transition="slide" href="#add_item_pg">Add Item</a> 
+                      <a class="home-links" data-transition="slide" href="#add_item_pg">Add</a> 
                     </div>
                     <div class="ui-block-b">
                       <a class="home-links" data-transition="slide" href="#edit_profile_pg">Profile</a>
@@ -455,9 +455,173 @@
                 </h3>
             </div>
         </div>
-        
-
         <!--END ADD Item Page-->
+
+        <!--Edit Profile Page-->
+        <div data-role="page" id="edit_profile_pg" class="my_pages" style="background: #303030;">
+            
+            <!--Header and Navbar-->
+            <div id="header" data-theme="a" data-role="header" class="main_page" data-position="fixed" data-id="footer">
+                <h3 class="head_vmartlk" class="main_page">
+                   <img id="vmart_logo" src="logo.gif" alt="image" >
+                   <a href="#login_pg">
+                    <img id="logout_img" src="icons/shut_down.png" alt="image" style="max-height: 32px;max-width: 32px;" >
+                   </a>
+                  
+                    <a href="#page1" data-transition="slide">
+                      <img id="home_btn" src="icons/home.png" alt="image" style="max-height: 32px;max-width: 32px;" >
+                    </a>
+                   </a>
+                </h3>
+                
+            </div>
+            <!--End Header and navbar-->
+
+            <div data-role="content" class="content-back home-grid">
+                <div class="edit_prof_content">
+        
+                    <img src="images/def-image.png" style="max-height:145px;" >
+                    
+                    <table style="width:100%;">
+                      <tr>
+                        <td>
+                          <button data-icon="gear" data-iconpos="right" data-mini="true" >Change</button>
+                        </td>
+                        <td>
+                          <button data-icon="delete" data-iconpos="right" data-mini="true" >Cancel</button>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <div data-role="controlgroup" data-mini="true">
+
+                      <input type="text" id="full_name" name="full_name" placeholder="Full Name" />
+                      <input type="email" name="email" id="email" value="" placeholder="Emails">
+                      <textarea id="address" name="address" placeholder="Address" ></textarea>
+                      <input type="tel" name="tel" id="tel" value="" placeholder="Tel Number">
+
+                      <button type="submit" id="profile_submit" data-icon="check" data-iconpos="right">Save Changes</button>
+
+                    </div>
+                  
+                  </div>
+              
+            </div>
+
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    
+                </h3>
+            </div>
+        </div>
+        <!--End Edit Profile Page-->
+
+        <!--Sales Page-->
+        <div data-role="page" id="my_sales_pg" class="my_pages" style="background: #303030;">
+            
+            <!--Header and Navbar-->
+            <div id="header" data-theme="a" data-role="header" class="main_page" data-position="fixed" data-id="footer">
+                <h3 class="head_vmartlk" class="main_page">
+                   <img id="vmart_logo" src="logo.gif" alt="image" >
+                   <a href="#login_pg">
+                    <img id="logout_img" src="icons/shut_down.png" alt="image" style="max-height: 32px;max-width: 32px;" >
+                   </a>
+                  
+                    <a href="#page1" data-transition="slide">
+                      <img id="home_btn" src="icons/home.png" alt="image" style="max-height: 32px;max-width: 32px;" >
+                    </a>
+                   </a>
+                </h3>
+                
+            </div>
+            <!--End Header and navbar-->
+
+            <div data-role="content" class="content-back home-grid">
+                <h3>My Sales</h3>
+
+                  <div class="my_sales_div" >
+
+                  <table width="100%" data-mini="true">
+                    <tr>
+                      <td>
+                        <select id="" name="year_select" placeholder="Year" data-mini="true">
+                          <option>2010</option>
+                          <option>2011</option>
+                          <option>2012</option>
+                          <option>2013</option>
+                        </select>
+                      </td>
+
+                      <td>
+                        <select id="" name="month_select" placeholder="Month" data-mini="true">
+                          <option>JAN</option>
+                          <option>FEB</option>
+                          <option>MAR</option>
+                          <option>APR</option>
+                          <option>MAY</option>
+                          <option>JUN</option>
+                          <option>JUL</option>
+                        </select>
+                      </td>
+
+                      <td>
+                        <select id="" name="product_select" placeholder="product" data-mini="true">
+                          <option>Necklace 15</option>
+                          <option>Necklace 25</option>
+                          <option>Bangle 21</option>
+                          <option>Showl 15</option>
+                        </select>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <div class="charts" id="sales_chart" ></div>
+
+                  <div class="charts" id="products_chart"></div>
+
+                </div><!--End my sales div-->
+            </div>
+
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    
+                </h3>
+            </div>
+        </div>
+        <!--End Sales Page-->
+
+        <!--Sample-->
+        <div data-role="page" id="" class="my_pages" style="background: #303030;">
+            
+            <!--Header and Navbar-->
+            <div id="header" data-theme="a" data-role="header" class="main_page" data-position="fixed" data-id="footer">
+                <h3 class="head_vmartlk" class="main_page">
+                   <img id="vmart_logo" src="logo.gif" alt="image" >
+                   <a href="#login_pg">
+                    <img id="logout_img" src="icons/shut_down.png" alt="image" style="max-height: 32px;max-width: 32px;" >
+                   </a>
+                  
+                    <a href="#page1" data-transition="slide">
+                      <img id="home_btn" src="icons/home.png" alt="image" style="max-height: 32px;max-width: 32px;" >
+                    </a>
+                   </a>
+                </h3>
+                
+            </div>
+            <!--End Header and navbar-->
+
+            <div data-role="content" class="content-back home-grid">
+
+              
+            </div>
+
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    
+                </h3>
+            </div>
+        </div>
+        <!--End Sample-->
 
 
         <script type="text/javascript" src="phonegap.js"></script>
