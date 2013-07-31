@@ -1,5 +1,5 @@
 $('#reposHome').bind('pageinit', function(event) {
-	loadRepos();
+	//loadRepos();
 });
 
 function loadRepos() {
