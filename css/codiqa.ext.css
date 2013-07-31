@@ -11,12 +11,12 @@
 .my_pages
 {
 	height: 0;
+	padding: 20px 20px 90px 20px;
 }
 
 .content-back
 {
-    height: 100%;
-    padding: 0;
+    
     text-shadow: none;
 }
 
@@ -59,7 +59,7 @@
 
 .home-grid
 {
-	height: 86%;
+	
 	padding: 12% 3% 3% 3%;
 } 
 
@@ -111,7 +111,7 @@
 .content-back
 {
 	text-align: center;
-	height: 100%;
+	
 	background-color: #303030;
 	color: white;
 }
