@@ -152,7 +152,7 @@ function draw_pie_chart()
     {
       title: ' ', 
       seriesDefaults: {shadow: true, renderer: jQuery.jqplot.PieRenderer, rendererOptions: { showDataLabels: true } }, 
-      legend: { show:true }
+      legend: { show:false }
     }
   );
 }
@@ -224,12 +224,19 @@ function login()
   var uname = $('#lgn_user').val();
   var pwd = $('#lgn_pass').val();;
   
+  
   if(!uname || !pwd)
   {
     $('#lgn_user').parent().css({'border-color':'red','background-color':'#E5A8A8'});
     $('#lgn_pass').parent().css({'border-color':'red','background-color':'#E5A8A8'});
+    $("#login_error").css('display','block');
   }
-  //else if(uname=="abc" && pwd == "abc")
+  else if(uname=="aqua" && pwd == "123")
+  {
+    window.location.href = "#page1";
+  }
+  
+  /*
   else
   {
     var urll = "http://localhost/Vmart/vm_mob_services/validate_user/"+uname+"/"+pwd;
@@ -265,36 +272,8 @@ function login()
         } 
       });
     
-  }
+  }*/
 
-  /*
-  if(!uname || !pwd)
-  {
-    alert("You Should Sign in");
-  }
-  else
-  {
-      var urll = "http://localhost/Vmart/vm_mob_services/validate_user/"+uname+"/"+pwd;
-      console.log(urll);
-      $.ajax({ 
-        type: "post", 
-        url: "http://localhost/Vmart/vm_mob_services/validate_user/"+uname+"/"+pwd, 
-        cache: false, 
-        success: function(json){  
-          try{
-            var obj = jQuery.parseJSON(json); 
-            alert( validate_user());
-          }
-          catch(e) {  
-            alert('Exception while request..'); 
-          }   
-        }, 
-        error: function(){   
-          alert('Error while request..'); 
-        } 
-      });
-  }
-  */
 }
 
 
